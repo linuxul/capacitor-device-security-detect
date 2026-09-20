@@ -6,8 +6,8 @@ public class DeviceSecurityDetectPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "DeviceSecurityDetectPlugin"
     public let jsName = "DeviceSecurityDetect"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "isJailBreakOrRooted", returnType: CAPPluginReturnPromise),
-        CAPPluginMethod(name: "pinCheck", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "isJailBreakOrRooted", returnType: .promise),
+        CAPPluginMethod(name: "pinCheck", returnType: .promise)
     ]
     private let implementation = DeviceSecurityDetect()
 
